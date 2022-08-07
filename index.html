@@ -7,21 +7,28 @@
     <meta name="keywords" content="Резюме,работа, Быков Роман">
     <meta name="discriprion" content="Это сайт резюме Быкова Романа">
     <title>Быков Роман Резюме</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="http://gitorbit.com/wp-content/uploads/2017/05/highres_454750209.jpeg" alt="тут моя фотка" width="150">
+    <div class="container">  
+    <div class="info">
+    <img src="http://gitorbit.com/wp-content/uploads/2017/05/highres_454750209.jpeg" alt="тут моя фотка" class="avatar">
+        <div class="info-text">
+            <div class="card-name">
     <h1>Роман</h1>
-    <p>Привет, меня зовут <strong>Роман</strong> и это мой сайт <strong>Резюме</strong></p>
-    <p>Люблю смотреть <strong><em>хорошие фильмы</em></strong> в кино и путешествия</p>
-    <table>
+    <p>Привет, меня зовут Роман и это мой сайт Резюме</p>
+    <p>Люблю смотреть хорошие фильмы в кино и путешествия</p>
+            </div>
+            <div class="card-jobs">
+    <table class="table">
         <h2>Опыт работы</h2>
-        <thead>
+    <!-- <thead>
         <tr>
             <th>Название</th>
             <th>Должность</th>
             <th>Период</th>
         </tr>
-    </thead>
+    </thead> -->
     <tbody>
         <tr>
             <td>ГПН-ИТО</td>
@@ -40,34 +47,41 @@
         </tr>
     </tbody>
     </table>
-          <h2>Мои хобби</h2>
-            <ol>
+            </div>
+            <div class="card-hobby">
+        <h2>Мои хобби</h2>
+            <ol class="hobby">
             <li>Путешествия</li>
             <li>Фильмы</li>
             <li>Спорт</li>
             <li>Игры</li>
         </ol>
-    <h4><strong>Список социальных сетей:</strong></h4>
-    <a href="https://vk.com/ryan72" target="_blank">VK</a>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" 
-            placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" 
-            placeholder="Введите email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="8" 
-            placeholder="Введите сообщение ..."></textarea>
-        </div>
-        <button type="submit">Отправить!</button>
-    </form>
-</body>
-</html>
+    </div>
+                <h4>Список социальных сетей:</h4>
+                <a href="https://vk.com/ryan72" target="_blank">VK</a>
+                <form class="form">
+                    <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" 
+                        placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" 
+                        placeholder="Введите email">
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea id="message" cols="20" rows="8" 
+                        placeholder="Введите сообщение ..."></textarea>
+                    </div>
+                    <button class="btn" type="submit">Отправить!</button>
+                </form>
+            </div>  
+            </body>
+            </html>
